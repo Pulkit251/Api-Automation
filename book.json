@@ -1,0 +1,24 @@
+{
+  "store": {
+    "book": [
+      {
+        "author": "MC Crawling",
+        "category": "reference",
+        "price": "50",
+        "title": "Go simon Go"
+      },
+      {
+        "author": "JP thomson",
+        "category": "fiction",
+        "price": "150",
+        "title": "Smooth waves"
+      },
+      {
+        "author": "Rom Jameson",
+        "category": "singer",
+        "price": "1450",
+        "title": "Micheal Jackson"
+      }
+    ]
+  }
+}
