@@ -47,7 +47,7 @@ public class responseParsing {
                 .when()
                 .get(baseURI);
 
-        JSONObject obj = new JSONObject(res.asString());
+        JSONObject obj = new JSONObject(res.asString()); //converting response to JSON object
         HashSet<String> set = new HashSet<>();
         for(int i = 0;i < obj.getJSONArray("book").length();i++){
            String titleObj = obj.getJSONArray("book").getJSONObject(i).get("title").toString();
