@@ -56,7 +56,7 @@ public class Authorization {
 
     @Test
     void testBearerTokenAuthentication(){
-        String bearerToken="ghp_bbn6pV03RwqXGOnH4S5E9Apu9uVYaC0xTiY";
+        String bearerToken="fbwi";
 
         given()
                 .headers("Authorization","Bearer " + bearerToken)
