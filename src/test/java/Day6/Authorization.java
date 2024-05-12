@@ -8,6 +8,7 @@ package Day6;
 //2.Digest
 //3.Preemptive
 
+import Day4.responseParsing;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -56,7 +57,7 @@ public class Authorization {
 
     @Test
     void testBearerTokenAuthentication(){
-        String bearerToken="fbwi";
+        String bearerToken="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";
 
         given()
                 .headers("Authorization","Bearer " + bearerToken)
@@ -92,5 +93,7 @@ public class Authorization {
                 .log().all();
 
     }
+
+
 
 }
