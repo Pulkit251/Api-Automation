@@ -16,7 +16,6 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-//token - secretssssssss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
 public class Authorization {
 
     @Test(priority = 1)
