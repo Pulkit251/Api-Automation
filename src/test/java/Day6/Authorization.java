@@ -61,7 +61,7 @@ public class Authorization {
         given()
                 .headers("Authorization","Bearer " + bearerToken)
                 .when()
-                .get("https://api.github.com/user/repos")
+                .get("google.com")
                 .then()
                 .statusCode(401)
                 .body("message",equalTo("Bad credentials"))
