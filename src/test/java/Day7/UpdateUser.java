@@ -25,10 +25,11 @@ public class UpdateUser {
         Response res = given()
                 .contentType(ContentType.JSON)
                 .headers("Authorization","Bearer " + bearerToken)
+                .pathParam("id",id)
                 .when()
-                .put("https://gorest.co.in/public/v2/users/{id}");
+                .patch("https://gorest.co.in/public/v2/users/{id}");
 
-        String name = res.jsonPath().getString("name");
+        String name = res.jsonPath().get("name");
         System.out.println(name);
     }
 }

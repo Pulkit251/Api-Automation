@@ -3,6 +3,7 @@ package Day7;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.ITest;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
@@ -20,10 +21,15 @@ public class GetUser {
         Response res = given()
                 .contentType(ContentType.JSON)
                 .headers("Authorization","Bearer " + bearerToken)
+                .pathParam("id",id)
                 .when()
                 .get("https://gorest.co.in/public/v2/users/{id}");
 
-        String name = res.jsonPath().getString("name");
+
+        System.out.println(id);
+        String name = res.jsonPath().get("name");
+        int statusCode = res.getStatusCode();
+        Assert.assertEquals(statusCode,200);
         System.out.println(name);
 
 

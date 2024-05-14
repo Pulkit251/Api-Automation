@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/AutomationProjects/ApiAuto/src/test/java/Day7">
+        <classes>
+            <class name="Day7.CreateUser"/>
+            <class name="Day7.GetUser"/>
+            <class name="Day7.UpdateUser"/>
+            <class name="Day7.DeleteUser"/>
+        </classes>
+    </test>
+</suite>

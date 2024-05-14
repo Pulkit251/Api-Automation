@@ -17,8 +17,10 @@ public class DeleteUser {
         given()
                 .contentType(ContentType.JSON)
                 .headers("Authorization","Bearer " + bearerToken)
+                .pathParam("id",id)
                 .when()
                 .delete("https://gorest.co.in/public/v2/users/{id}");
+
 
     }
 }
